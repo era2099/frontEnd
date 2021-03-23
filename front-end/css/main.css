@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color: #1e90ff;
+    --secondary-color: #2f3542;
+    --third-color: #747d8c;
+    --third-color-op: rgba(116, 125, 140, 0.3);
+    --background-color: #f1f2f6;
+    --primary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--primary-font);
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.container{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.aside-block{
+    background-color: var(--primary-color);
+    min-height: 200px;
+    max-width: 70px;
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 30px 10px 5px rgb(218, 218, 218);
+}
+
+.main-navigation{
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.main-navigation ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4em;
+}
+
+.opc{
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.main-options-slogan{
+    margin: 40px 0px 100px 0px;
+}
+
+.main-options-slogan-h3{
+    font-size: 25px;
+}
+
+.main-options-slogan-h1{
+    font-size: 60px;
+}
+
+.boton-info{
+    border-radius: 30px;
+    padding: 15px 60px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.boton-info:hover{
+    background-color: #237bd3;
+}
+
+.img-logo{
+    max-width: 15%;
+}
+
+.img-banner{
+    margin: 30px 100px;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem;
+}
+
+.card{
+    border-left: 2px var(--third-color-op) solid;
+    border-right: 2px var(--third-color-op) solid;
+    padding: 0px 15px;
+}
+
+.h3-card{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.text-card{
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.main-color{
+    color: var(--primary-color);
+}
+
+.sec-color{
+    color: var(--secondary-color);
+}
+
+.boton-color{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
